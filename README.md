@@ -1,6 +1,6 @@
-<h1 align="center">📊 Índice de Massa Corporal 🍎</h1>
+<h1 align="center">📊 Índice de Massa Corporal 📊</h1>
 <p align="center">
-  <img src="/assets/gif/GigIMC.gif">
+  <img src="/assets/gif/GifIMC.gif">
 </p>
 
 <h2>:books: Informações</h2>
