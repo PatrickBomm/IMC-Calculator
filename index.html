@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/png/logo.png" />
+    <title>Índice de massa corporal</title>
+    <link rel="stylesheet" href="src/imc.css">
+</head>
+
+<body>
+    <main>
+        <div class="responsive">
+            <div class="container">
+                <div class="box">
+                    <div class="left">
+                        <h1>Calcule seu IMC</h1>
+                        <p><strong>Altura</strong></p>
+                        <input type="number" placeholder="Ex: 1.60" id="altura" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==5) return false;">
+                        <p><strong>Peso</strong></p>
+                        <input type="number" placeholder="Ex: 60 Kg" id="peso" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false;">
+                        <button id="send" onclick="Calcular()">Calcular</button>
+                    </div>
+                    <div class="right">
+                        <p> O IMC é um cálculo simples que permite avaliar se a pessoa está dentro do peso que é considerado ideal para a sua altura.</p>
+                        <div class="result">
+                            <img src="assets/png/dieta.png" alt="" class="png" id="png">
+                            <div class="resultSpan" id="resultado">
+                                <span id="resultTxt" class="valor"></span>
+                                <br />
+                                <span id="resultGrau"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="src/imc.js"></script>
+</body>
+
+</html>
